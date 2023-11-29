@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /assets/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://gethitnews.com/sitemap.xml

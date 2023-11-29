@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+
+    <!-- Mobile Specific Metas -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Basic Page Needs -->
+
+    <title><?php echo $pageTitle; ?></title>
+    <meta name="robots" content="index, follow">
+    <meta name="GOOGLEBOT" content="INDEX, FOLLOW">
+    <meta name="classification" content="News">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="url" content="https://gethitnews.com">
+    <meta name="title" content="<?php echo $googleTitle; ?>">
+    <meta name="description" content="<?php echo $googleDescription; ?>">
+    <meta name="type" content="website">
+    <meta name="image" content="https://gethitnews.com/assets/logos/logo-180x180.png">
+    <meta name="site_name" content="Get Hit News">
+    <meta name="keywords" content="<?php echo $googleKeywords; ?>">
+    <meta name="copyright" content="<?php echo $googleCopyright; ?>">
+    <meta name="creator" content="<?php echo $googleCreator; ?>">
+    <meta name="author" content="<?php echo $googleAuthor; ?>">
+    <meta property="article:tag" content="<?php echo $googleArticle; ?>">
+    <meta property="news:tag" content="<?php echo $googleNews; ?>">
+
+    <!-- Facebook -->
+
+    <meta property="og:url" content="https://gethitnews.com">
+    <meta property="og:title" content="<?php echo $faceTitle; ?>">
+    <meta property="og:description" content="<?php echo $faceDescription; ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gethitnews.com/assets/logos/logo-180x180.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:site_name" content="Get Hit News">
+    <meta property="og:keywords" content="<?php echo $faceKeywords; ?>">
+    <meta property="og:copyright" content="<?php echo $faceCopyright; ?>">
+    <meta property="og:creator" content="<?php echo $faceCreator; ?>">
+    <meta property="og:author" content="<?php echo $faceAuthor; ?>">
+
+    <!-- Twitter -->
+
+    <meta name="twitter:url" content="https://gethitnews.com">
+    <meta name="twitter:title" content="<?php echo $twitterTitle; ?>">
+    <meta name="twitter:description" content="<?php echo $twitterDescription; ?>">
+    <meta name="twitter:type" content="website">
+    <meta name="twitter:image" content="https://gethitnews.com/assets/logos/logo-180x180.png">
+    <meta name="twitter:keywords" content="<?php echo $twitterKeywords; ?>">
+    <meta name="twitter:site" content="@gethitnews">
+    <meta name="twitter:copyright" content="<?php echo $twitterCopyright; ?>">
+    <meta name="twitter:creator" content="<?php echo $twitterCreator; ?>">
+    <meta name="twitter:author" content="<?php echo $twitterAuthor; ?>">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicons -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logos/favicon.ico">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/logos/logo-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logos/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/logos/logo-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/logos/logo-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/logos/logo-512x512.png">
+
+    <link rel="canonical" href="https://gethitnews.com">
+
+    <!-- SCRIPTS -->
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Get Hit News",
+            "url": "https://gethitnews.com"
+        }
+    </script>
+
+    <script>
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+
+    <!-- FONTS -->
+
+    <link rel="stylesheet" href="assets/css/typography.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"> -->
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="assets/css/flowbite181.min.css">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+
+</head>
