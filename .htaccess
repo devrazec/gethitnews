@@ -1,9 +1,9 @@
 RewriteEngine On
 RewriteCond %{ENV:HTTP} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
-RewriteRule ^ http://news.test.%{REQUEST_URI} [L,NE,R=301]
+RewriteRule ^ http://gethitnews.test.%{REQUEST_URI} [L,NE,R=301]
 
-ErrorDocument 404 http://news.test/404.php
+ErrorDocument 404 http://gethitnews.test/404.php
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

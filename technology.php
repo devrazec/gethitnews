@@ -1,6 +1,6 @@
 <?php
 
-$pageTitle = 'Sports - Get Hit News';
+$pageTitle = 'Technology - Get Hit News';
 
 // Google
 $googleTitle = '';
@@ -41,7 +41,7 @@ include_once 'head.php';
         <div class="flex relative z-20 justify-center px-4 mx-auto max-w-screen-xl bg-white dark:bg-gray-900 rounded">
             <div class="xl:w-[828px] mx-auto max-w-none dark:format-invert">
 
-                <!-- <rssapp-wall id="t2j80JKMY0FKgVE8"></rssapp-wall>
+                <!-- <rssapp-wall id="ty5OznrTPisNeRAu"></rssapp-wall>
                 <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script> -->
 
             </div>

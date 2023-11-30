@@ -161,10 +161,10 @@
                 </div>
             </section> -->
 
-            <rssapp-wall id="tP8kWRI6p7bKNb5M">
+            <!-- <rssapp-wall id="tP8kWRI6p7bKNb5M">
             </rssapp-wall>
             <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async>
-            </script>
+            </script> -->
 
         </div>
         <aside class="hidden xl:block" aria-labelledby="sidebar-label">

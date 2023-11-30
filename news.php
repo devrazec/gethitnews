@@ -9,8 +9,6 @@ $googleKeywords = '';
 $googleCopyright = '';
 $googleCreator = '';
 $googleAuthor = '';
-$googleArticle = '';
-$googleNews = '';
 
 // Facebook
 $faceTitle = '';

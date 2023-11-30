@@ -9,8 +9,6 @@ $googleKeywords = 'News, Headline, Breaking News, Sports, Lifestyle, Technology,
 $googleCopyright = '';
 $googleCreator = '';
 $googleAuthor = '';
-$googleArticle = '';
-$googleNews = '';
 
 // Facebook
 $faceTitle = '';
