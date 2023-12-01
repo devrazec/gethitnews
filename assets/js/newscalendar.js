@@ -2,10 +2,7 @@ document.onreadystatechange = function () {
     if (document.readyState == "complete") {
 
         console.log("Success in onreadystatechange()");
-
-        //const newsCalendar = document.querySelector('input[id="datepickerId"]');  
-        //console.log(newsCalendar);
-
+        
         const datepickerEl = document.getElementById('datepickerId');
         //console.log(datepickerEl);
 
@@ -20,20 +17,6 @@ document.onreadystatechange = function () {
             endDate: new Date(),
             format: 'yyyy/mm/dd'
         });
-
-        //console.log(datepickerEl);
-
-        //new Datepicker(datepickerEl, {
-        //    todayHighlight: true,
-        //    minDate: new Date()
-        //});
-
-        //document.querySelectorAll('[datepicker]').forEach((input) => {
-        //    new dateRangePicker(input, {
-        //        todayHighlight: true,
-        //        minDate: new Date()
-        //    });
-        //});
     }
 }
 
@@ -57,38 +40,3 @@ function call_php() {
     xmlhttp.open('GET', 'example.php', true);
     xmlhttp.send();
 }
-
-
-
-//const newsCalendar = document.getElementById('news-calendar');
-
-//var newsCalendar = document.getElementById("news-calendar");
-
-//const newsCalendar = document.querySelector('div[id="news-calendar"]');
-
-//const newsCalendar = document.querySelector('div[id="news-calendar"]').datepicker;
-
-//newsCalendar.config ({
-//    minDate: new Date()
-//});
-
-//console.log(newsCalendar);
-
-//const datepicker = new Datepicker(newsCalendar, {
-//    todayHighlight: true,
-//    minDate: new Date()
-//});
-
-
-/* const newsDatepicker = new datepicker(newsCalendar, {
-    todayHighlight: true,
-    minDate: new Date()
-}); */
-
-
-
-//newsCalendar.datepicker.config({
-///    todayHighlight: true,
-//minDate: new Date()
-///});
-
