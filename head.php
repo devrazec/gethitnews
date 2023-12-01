@@ -23,12 +23,9 @@
     <meta name="type" content="website">
     <meta name="image" content="https://gethitnews.com/assets/logos/logo-180x180.png">
     <meta name="site_name" content="Get Hit News">
-    <meta name="keywords" content="<?php echo $googleKeywords; ?>">
     <meta name="copyright" content="<?php echo $googleCopyright; ?>">
     <meta name="creator" content="<?php echo $googleCreator; ?>">
     <meta name="author" content="<?php echo $googleAuthor; ?>">
-    <meta property="article:tag" content="<?php echo $googleArticle; ?>">
-    <meta property="news:tag" content="<?php echo $googleNews; ?>">
 
     <!-- Facebook -->
 
@@ -39,7 +36,6 @@
     <meta property="og:image" content="https://gethitnews.com/assets/logos/logo-180x180.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:site_name" content="Get Hit News">
-    <meta property="og:keywords" content="<?php echo $faceKeywords; ?>">
     <meta property="og:copyright" content="<?php echo $faceCopyright; ?>">
     <meta property="og:creator" content="<?php echo $faceCreator; ?>">
     <meta property="og:author" content="<?php echo $faceAuthor; ?>">
@@ -51,7 +47,6 @@
     <meta name="twitter:description" content="<?php echo $twitterDescription; ?>">
     <meta name="twitter:type" content="website">
     <meta name="twitter:image" content="https://gethitnews.com/assets/logos/logo-180x180.png">
-    <meta name="twitter:keywords" content="<?php echo $twitterKeywords; ?>">
     <meta name="twitter:site" content="@gethitnews">
     <meta name="twitter:copyright" content="<?php echo $twitterCopyright; ?>">
     <meta name="twitter:creator" content="<?php echo $twitterCreator; ?>">
@@ -73,14 +68,25 @@
     <!-- SCRIPTS -->
 
     <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "WebSite",
-            "name": "Get Hit News",
-            "url": "https://gethitnews.com"
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "<?php echo $headLineTitle; ?>",
+      "image": [
+        "<?php echo $headLineImage1; ?>",
+        "<?php echo $headLineImage2; ?>",
+        "<?php echo $headLineImage3; ?>"
+        ],
+      "datePublished": "<?php echo $headLineDate; ?>",
+      "dateModified": "<?php echo $headLineDate; ?>",
+      "author": [{
+          "@type": "Organization",
+          "name": "Get Hit News",
+          "url": "https://gethitnews.com"
+        }]
+    }
     </script>
-
+    
     <script>
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');

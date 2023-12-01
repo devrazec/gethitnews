@@ -34,10 +34,15 @@ if (file_exists($lifestyle_json)) {
 
 $pageTitle = 'Lifestyle - Get Hit News';
 
+$headLineTitle  = 'Lifestyle - Get Hit News';
+$headLineImage1 = 'https://gethitnews.com/assets/images/lifstyleimage1.jpg';
+$headLineImage2 = 'https://gethitnews.com/assets/images/lifstyleimage2.jpg';
+$headLineImage3 = 'https://gethitnews.com/assets/images/lifstyleimage3.jpg';
+$headLineDate   = date("Y-m-d");
+
 // Google
 $googleTitle = '';
 $googleDescription = '';
-$googleKeywords = '';
 $googleCopyright = '';
 $googleCreator = '';
 $googleAuthor = '';
@@ -45,7 +50,6 @@ $googleAuthor = '';
 // Facebook
 $faceTitle = '';
 $faceDescription = '';
-$faceKeywords = '';
 $faceCopyright = '';
 $faceCreator = '';
 $faceAuthor = '';
@@ -53,7 +57,6 @@ $faceAuthor = '';
 // Twitter
 $twitterTitle = '';
 $twitterDescription = '';
-$twitterKeywords = '';
 $twitterCopyright = '';
 $twitterCreator = '';
 $twitterAuthor = '';
@@ -101,7 +104,7 @@ include_once 'head.php';
                                         echo '<span class="inline-block mb-2 text-xs text-gray-500 dark:text-gray-400">' . $news_date . '</span>';
                                         echo '<h5 class="mb-2 font-semibold leading-tight text-gray-900 dark:text-white">'. $item['title'] . '</h5>';
                                         echo '<p class="mb-2 font-light text-gray-500 dark:text-gray-400">'. $item['content_text'] . '</p>';
-                                        echo '<a href="'. $item['url'] . '" class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500" target="_blank">';
+                                        echo '<a rel="nofollow" href="'. $item['url'] . '" class="inline-flex items-center font-medium text-primary-600 hover:underline dark:text-primary-500" target="_blank">';
                                         echo 'Read more';
                                         echo '<svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -144,7 +147,7 @@ include_once 'head.php';
                     <?php
                     include_once 'newscalendar.php';
                     //include_once 'rightsidetodaynews.php';
-                    include_once 'newsletterbox.php';
+                    //include_once 'newsletterbox.php';
                     ?>
                 </div>
             </aside>
@@ -160,5 +163,6 @@ include_once 'head.php';
     <script src="assets/js/flowbite181.js"></script>
     <script src="assets/js/dark-mode.js"></script>
     <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/newscalendar.js"></script>
 
 </body>
