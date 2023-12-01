@@ -86,7 +86,7 @@ include_once 'head.php';
 
                                     foreach ($news_item as $key => $item) { 
                                         
-                                        echo '<div class="w-full md:w-1/2 lg:w-1/3 p-3">';
+                                        echo '<div class="flex items-stretch w-full md:w-1/2 lg:w-1/3 p-3">';
                                         echo '<div class="p-6 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">';
                                         echo '<div class="relative h-52 mb-6">';
                                         echo '<span class="absolute top-0 right-0 mt-4 mr-4 text-xs text-white px-2 py-1 font-semibold bg-gray-600 bg-opacity-50 rounded-md uppercase">' . $news_category . '</span>';
@@ -132,9 +132,9 @@ include_once 'head.php';
                             </div> -->
 
                         </div>
-                        <div class="text-center">
+                        <!-- <div class="text-center">
                             <button type="submit" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 text-center">View More News</button>
-                        </div>
+                        </div> -->
                     </div>
                 </section>
 
@@ -142,6 +142,7 @@ include_once 'head.php';
             <aside class="hidden xl:block" aria-labelledby="sidebar-label">
                 <div class="xl:w-[336px] sticky pt-5 top-2">
                     <?php
+                    include_once 'newscalendar.php';
                     include_once 'rightsidetodaynews.php';
                     include_once 'newsletterbox.php';
                     ?>
@@ -158,5 +159,6 @@ include_once 'head.php';
 
     <script src="assets/js/flowbite181.js"></script>
     <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/datepicker.js"></script>
 
 </body>

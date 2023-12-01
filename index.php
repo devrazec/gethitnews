@@ -84,6 +84,7 @@ $newsText3 = 'Other Tory MPs, including former cabinet ministers Sir Jacob Rees-
     <script src="assets/js/flowbite181.js"></script>
     <script src="assets/js/cookie.js"></script>
     <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/datepicker.js"></script>
 
     <?php
     // include_once 'googleanalitics.html';       
