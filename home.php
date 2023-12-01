@@ -84,7 +84,7 @@ if (file_exists($sports_json)) {
                 <div class="xl:w-[336px] sticky pt-5 top-2">
                     <?php
                     include_once 'newscalendar.php';
-                    include_once 'rightsidetodaynews.php';
+                    //include_once 'rightsidetodaynews.php';
                     include_once 'newsletterbox.php';
                     ?>
                 </div>
