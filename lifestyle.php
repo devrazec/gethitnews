@@ -164,5 +164,5 @@ include_once 'head.php';
     <script src="assets/js/dark-mode.js"></script>
     <script src="assets/js/datepicker.js"></script>
     <script src="assets/js/newscalendar.js"></script>
-
+    
 </body>
