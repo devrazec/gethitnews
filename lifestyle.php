@@ -11,6 +11,22 @@ $news_date = date('M d' . ', ' . 'Y');
 $news_category = 'Lifestyle';
 $news_item = '';
 
+function unique_multidim_array($array, $key) {
+
+    $temp_array = array();
+    $i = 0;
+    $key_array = array();
+
+    foreach($array as $val) {
+        if (!in_array($val[$key], $key_array)) {
+            $key_array[$i] = $val[$key];
+            $temp_array[$i] = $val;
+        }
+        $i++;
+    }
+    return $temp_array;
+}
+
 // Check the file
 if (file_exists($lifestyle_json)) {
 
@@ -18,8 +34,14 @@ if (file_exists($lifestyle_json)) {
 
         $data_json = json_decode(file_get_contents($lifestyle_json), JSON_PRETTY_PRINT);
         $news_item = $data_json['items'];
+        $news_item = unique_multidim_array($news_item, 'title');
+        
+        //$news_item_array [] = $news_item;
 
-        //var_dump($data_item);
+        //$news_item = array_unique($news_item_array);
+        //print_r($news_item_array);
+
+        //var_dump($multi_array);
         //die();
 
     } else {
@@ -63,6 +85,31 @@ $twitterAuthor = '';
 
 include_once 'head.php';
 
+function get_response_code($url) {
+
+    //var_dump($url);
+    //die();
+    // error 451
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_exec($ch);
+    $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    //return $status;
+
+    //file_put_contents($sports_path, file_get_contents('https://rss.app/feeds/v1.1/t2j80JKMY0FKgVE8.json'));
+
+    //file_get_contents($url);
+    //list($version, $status, $text) = explode(' ', $http_response_header[0], 3);
+
+    //var_dump($status);
+    //die();
+    return $status;
+}
+
+//var_dump(get_response_code('http://badurl.com'));
+
 ?>
 
 <body>
@@ -95,11 +142,19 @@ include_once 'head.php';
                                         echo '<span class="absolute top-0 right-0 mt-4 mr-4 text-xs text-white px-2 py-1 font-semibold bg-gray-600 bg-opacity-50 rounded-md uppercase">' . $news_category . '</span>';
                                         
                                         if (array_key_exists('image', $item)) {
+                                            $status = get_response_code($item['url']);
+
+                                            var_dump($status);
+                                            //die();
+                                            //if (get_response_code($item['image']) == '403') {
+
+                                            //}
+
                                             echo '<img class="w-full h-full object-cover rounded-lg" src="' . $item['image'] . '" alt="'. $news_category . '_image_' . $key . '">';
                                         } else {
-                                            echo '<img class="w-full h-full object-cover rounded-lg" src="assets/logos/logo-180x180.png" alt="'. $news_category . '_image_' . $key . '">';
+                                            echo '<img class="w-full h-full object-cover rounded-lg" src="assets/images/category/home-get-hit-news.jpg" alt="'. $news_category . '_image_' . $key . '">';
                                         }
-                                       
+                                                                               
                                         echo '</div>';
                                         echo '<span class="inline-block mb-2 text-xs text-gray-500 dark:text-gray-400">' . $news_date . '</span>';
                                         echo '<h5 class="mb-2 font-semibold leading-tight text-gray-900 dark:text-white">'. $item['title'] . '</h5>';
@@ -164,5 +219,5 @@ include_once 'head.php';
     <script src="assets/js/dark-mode.js"></script>
     <script src="assets/js/datepicker.js"></script>
     <script src="assets/js/newscalendar.js"></script>
-    
+
 </body>

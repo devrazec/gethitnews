@@ -11,6 +11,22 @@ $news_date = date('M d' . ', ' . 'Y');
 $news_category = 'Travel';
 $news_item = '';
 
+function unique_multidim_array($array, $key) {
+
+    $temp_array = array();
+    $i = 0;
+    $key_array = array();
+
+    foreach($array as $val) {
+        if (!in_array($val[$key], $key_array)) {
+            $key_array[$i] = $val[$key];
+            $temp_array[$i] = $val;
+        }
+        $i++;
+    }
+    return $temp_array;
+}
+
 // Check the file
 if (file_exists($travel_json)) {
 
@@ -18,6 +34,66 @@ if (file_exists($travel_json)) {
 
         $data_json = json_decode(file_get_contents($travel_json), JSON_PRETTY_PRINT);
         $news_item = $data_json['items'];
+
+        // Create array of url      
+        //$array_title = array_column($news_item, 'title');
+
+        //$news_item = unique_multidim_array($news_item, 'title');
+
+        //$array_title = array_column($news_item, 'title');
+
+       //$array_unique = array_unique($array_title);
+
+        //$array_reference_database = array_column($reference_database, 'title');
+
+        //$news_item_no_dupli = array_diff($array_unique, $news_item['title']);
+
+        //$lowered = array_map('strtolower', $news_item);
+
+
+        $array = array_map('json_encode', $news_item);
+        $array = array_unique($array);
+        
+
+        $array_title = array_column($array, 'title');
+
+        echo '<pre>';
+        print_r($array_title);
+
+        //print_r($array_unique);
+        //print_r($news_item_no_dupli['title']);
+
+        echo  '</pre>';
+
+        die();
+
+        // Convert the multi-dimensional array into a single-dimensional array
+        //$news_item = array_merge($news_item);
+
+
+        //var_dump($single_dimensional_array);
+        //die();
+
+        // Remove the duplicate values from the single-dimensional array
+        //$news_item = array_unique($news_item);
+
+        //var_dump($news_item);
+        //die();
+
+        // Convert the single-dimensional array back into a multi-dimensional array
+        //$result = array_chunk($single_dimensional_array, count($news_item[0]));
+
+        //$news_item = $result;
+
+        //$news_item_array [] = $news_item;
+        //$news_item = unique_multidim_array($news_item, 'url');
+
+       // foreach($news_item as $k=>$v) {
+//
+        //    if( ($kt=array_search($v,$news_item))!==false and $k!=$kt )
+       // //     { unset($news_item[$kt]); }
+            
+        //    }
 
         //var_dump($data_item);
         //die();
@@ -97,7 +173,7 @@ include_once 'head.php';
                                         if (array_key_exists('image', $item)) {
                                             echo '<img class="w-full h-full object-cover rounded-lg" src="' . $item['image'] . '" alt="'. $news_category . '_image_' . $key . '">';
                                         } else {
-                                            echo '<img class="w-full h-full object-cover rounded-lg" src="assets/logos/logo-180x180.png" alt="'. $news_category . '_image_' . $key . '">';
+                                            echo '<img class="w-full h-full object-cover rounded-lg" src="assets/images/category/travel-get-hit-news.jpg" alt="'. $news_category . '_image_' . $key . '">';
                                         }
                                        
                                         echo '</div>';
@@ -141,5 +217,6 @@ include_once 'head.php';
     <script src="assets/js/flowbite181.js"></script>
     <script src="assets/js/dark-mode.js"></script>
     <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/newscalendar.js"></script>
 
 </body>

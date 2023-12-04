@@ -42,6 +42,7 @@ include_once 'head.php';
     <script src="assets/js/cookie.js"></script>
     <script src="assets/js/dark-mode.js"></script>
     <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/newscalendar.js"></script>
 
     <?php
     // include_once 'googleanalitics.html';       
