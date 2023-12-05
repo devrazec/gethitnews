@@ -12,6 +12,7 @@
     <title><?php echo $pageTitle; ?></title>
     <meta name="robots" content="index, follow">
     <meta name="GOOGLEBOT" content="INDEX, FOLLOW">
+    <!-- <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="> -->
     <meta name="classification" content="News">
 
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -21,7 +22,7 @@
     <meta name="title" content="<?php echo $googleTitle; ?>">
     <meta name="description" content="<?php echo $googleDescription; ?>">
     <meta name="type" content="website">
-    <meta name="image" content="https://gethitnews.com/assets/logos/logo-180x180.png">
+    <meta name="image" content="https://gethitnews.com/images/logo/180x180.png">
     <meta name="site_name" content="Get Hit News">
     <meta name="copyright" content="<?php echo $googleCopyright; ?>">
     <meta name="creator" content="<?php echo $googleCreator; ?>">
@@ -33,7 +34,7 @@
     <meta property="og:title" content="<?php echo $faceTitle; ?>">
     <meta property="og:description" content="<?php echo $faceDescription; ?>">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://gethitnews.com/assets/logos/logo-180x180.png">
+    <meta property="og:image" content="https://gethitnews.com/images/logo/180x180.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:site_name" content="Get Hit News">
     <meta property="og:copyright" content="<?php echo $faceCopyright; ?>">
@@ -46,7 +47,7 @@
     <meta name="twitter:title" content="<?php echo $twitterTitle; ?>">
     <meta name="twitter:description" content="<?php echo $twitterDescription; ?>">
     <meta name="twitter:type" content="website">
-    <meta name="twitter:image" content="https://gethitnews.com/assets/logos/logo-180x180.png">
+    <meta name="twitter:image" content="https://gethitnews.com/images/logo/180x180.png">
     <meta name="twitter:site" content="@gethitnews">
     <meta name="twitter:copyright" content="<?php echo $twitterCopyright; ?>">
     <meta name="twitter:creator" content="<?php echo $twitterCreator; ?>">
@@ -55,13 +56,13 @@
 
     <!-- Favicons -->
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/logos/favicon.ico">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/logos/logo-180x180.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/logos/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/logos/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="180x180" href="assets/logos/logo-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/logos/logo-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/logos/logo-512x512.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo/favicon.ico">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="images/logo/180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo/16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo/32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="images/logo/180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/logo/192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/logo/512x512.png">
 
     <link rel="canonical" href="https://gethitnews.com">
 

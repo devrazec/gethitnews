@@ -111,7 +111,7 @@ include_once 'head.php';
 
     <!-- SCRIPTS -->
 
-    <script src="assets/js/flowbite153.js"></script>
+    <script src="assets/js/flowbite181.js"></script>
     <script src="assets/js/dark-mode.js"></script>
 
 </body>

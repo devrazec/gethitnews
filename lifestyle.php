@@ -57,7 +57,7 @@ if (file_exists($lifestyle_json)) {
 $pageTitle = 'Lifestyle - Get Hit News';
 
 $headLineTitle  = 'Lifestyle - Get Hit News';
-$headLineImage1 = 'https://gethitnews.com/assets/images/lifstyleimage1.jpg';
+$headLineImage1 = 'https://gethitnews.com/images/images/lifstyleimage1.jpg';
 $headLineImage2 = 'https://gethitnews.com/assets/images/lifstyleimage2.jpg';
 $headLineImage3 = 'https://gethitnews.com/assets/images/lifstyleimage3.jpg';
 $headLineDate   = date("Y-m-d");
